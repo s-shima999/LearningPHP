@@ -1,0 +1,18 @@
+{
+    "autoload": {
+        "psr-4": {
+            "MyApp\\": "src/",
+            "Test\\": "tests/"
+        }
+    },
+
+    "require-dev": {
+        "phpunit/phpunit": "*.*",
+        "phpstan/phpstan": "*.*"
+    },
+    
+    "require": {
+        "smarty/smarty": "*.*"
+    }
+
+}

@@ -1,0 +1,19 @@
+<!-- ログ出力設定 -->
+<SETTING>
+    <!-- 出力有無(True/False) -->
+    <OUTPUT>True</OUTPUT>
+
+    <!-- 出力フォルダパス -->
+    <!-- <PATH>./log</PATH> -->
+    <PATH>./log/</PATH>
+
+    <!-- 出力ファイル名 -->
+    <NAME>test</NAME>
+
+    <!-- 出力ファイル拡張子 -->
+    <EXTENTION>.log</EXTENTION>
+
+    <!-- ログ出力レベル(DEBUG/INFO/WARN/ERROR) -->
+    <LEVEL>DEBUG</LEVEL>
+
+</SETTING>

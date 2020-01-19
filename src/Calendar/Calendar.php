@@ -66,7 +66,7 @@ class Calendar{
      *
      * @return void
      */
-    public function getDayOfWeekColor(int $DayOfWeekIdx):string{
+    private function getDayOfWeekColor(int $DayOfWeekIdx):string{
 
         $color = "";
 
@@ -75,6 +75,15 @@ class Calendar{
         }
 
         return $color;
+    }
+
+    /**
+     * Undocumented function
+     *
+     * @return date
+     */
+    private function getHolidays():date{
+
     }
 
 }
