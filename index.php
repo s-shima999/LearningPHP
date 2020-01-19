@@ -11,6 +11,8 @@
 
     $nextPage = $_POST['NextPage'];
 
+    $url = $_SERVER["REDIRECT_URL"];
+
     session_start();
 
     if(!isset($_SESSION['id'])){
@@ -20,9 +22,17 @@
             $smarty->display('login.tpl');
         }
     }else{
-        echo $_SESSION['id'];
-        $smarty->assign('name', $_SESSION['id']);
-        $smarty->display('top.tpl');
+        switch ($url) {
+            case "/Calendar":
+                require_once('./src/Calendar/index.php');
+                break;
+            case "/Multiplication":
+                require_once('./src/Multiplication/index.php');
+                break;
+            default:
+                $smarty->assign('name', $_SESSION['id']);
+                $smarty->display('top.tpl');
+        }
     }
 
 ?>

@@ -4,7 +4,7 @@
 </head>
 <body>
 <div>選択した年月のカレンダーを表示します</div>
-<form action="./index.php" method="post">
+<form action="./Calendar" method="post">
 <?php
     ini_set('display_errors', 1);
 
